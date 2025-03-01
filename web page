@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        table {
+            width: 500px;
+            background: pink;
+            border-collapse: collapse;
+            border: 2px solid #000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 15px;
+            border: 1px solid #000;
+        }
+        th {
+            text-align: left;
+            background-color: #ddd;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 3px;
+        }
+        .inline-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .btn-group {
+            text-align: center;
+        }
+        button {
+            padding: 4px 10px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn-register {
+            background-color: white;
+            color: black;
+        }
+        .btn-clear {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <h1 align-items:center> Student Registration Form </h1>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="name" required></td>
+        </tr>
+        <tr>
+            <td>Contact Number</td>
+            <td><input type="tel" name="contact" required></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <div class="inline-group">
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><textarea name="address" rows="3"></textarea></td>
+        </tr>
+        <tr>
+            <td>Hobbies</td>
+            <td>
+                <div class="inline-group">
+                    <input type="checkbox" id="singing" name="hobbies" value="Singing">
+                    <label for="singing">Singing</label>
+                    <input type="checkbox" id="travelling" name="hobbies" value="Travelling">
+                    <label for="travelling">Travelling</label>
+                    <input type="checkbox" id="reading" name="hobbies" value="Reading">
+                    <label for="reading">Reading novels</label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Skillset</td>
+            <td>
+                <div class="inline-group">
+                  <input type="checkbox" id="C" name="skills" value="C">
+                    <label for="C">C</label>
+                    <input type="checkbox" id="python" name="skills" value="Python">
+                    <label for="python">Python</label>
+                    <input type="checkbox" id="java" name="skills" value="Java">
+                    <label for="java">Java</label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Highest Qualification</td>
+            <td>
+                <select name="qualification">
+                    <option value="">--SELECT--</option>
+                    <option value="High School">High School</option>
+                    <option value="Bachelor's">Bachelor's</option>
+                    <option value="Master's">Master's</option>
+                    <option value="PhD">PhD</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>District</td>
+            <td>
+                <select name="district">
+                    <option value="">--SELECT--</option>
+                    <option value="Ranga reddy">District 1</option>
+                    <option value="tirupati">District 2</option>
+                    <option value="godhavari ghani">District 3</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="submit" class="btn-register" >Register</button>
+          </td>
+            <td>
+                <button type="reset" class="btn-clear">Clear</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
+
